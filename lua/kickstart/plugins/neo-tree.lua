@@ -11,13 +11,14 @@ return {
   },
   lazy = false,
   keys = {
+    { '<C-b>', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
     { '<Space>e', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['<Space>e'] = 'close_window',
+          ['<C-b>'] = 'close_window',
         },
       },
     },

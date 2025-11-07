@@ -3,5 +3,14 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  'easymotion/vim-easymotion',
   'tpope/vim-fugitive',
+  {
+    'akinsho/bufferline.nvim',
+    requires = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      vim.opt.termguicolors = true
+      require('bufferline').setup {}
+    end,
+  },
 }
