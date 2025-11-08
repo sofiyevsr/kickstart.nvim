@@ -3,6 +3,11 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  {
+    'Exafunction/windsurf.vim',
+    commit = 'a8d47ec54fe82df920b2545559f767003e8a7f8d',
+    event = 'BufEnter',
+  },
   'easymotion/vim-easymotion',
   'tpope/vim-fugitive',
   {
